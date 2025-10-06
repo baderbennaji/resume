@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bader Ben Naji — Resume</title>
+  <style>
+    :root{
+      --accent:#1d4ed8;   /* Primary accent blue */
+      --text:#0f172a;     /* Main text navy */
+      --muted:#475569;    /* Muted text gray */
+      --bg:#f8fafc;       /* Light background */
+      --chip:#dbeafe;     /* Light blue chips */
+      --rule:#cbd5e1;     /* Divider lines */
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue","Noto Sans",Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:900px;margin:36px auto;padding:0 24px}
+    header{display:flex;flex-direction:column;align-items:center;gap:12px;margin-bottom:24px;text-align:center}
+    header img{width:140px;height:140px;border-radius:50%;object-fit:cover;box-shadow:0 2px 6px rgba(0,0,0,0.15)}
+    .name{font-size:2.2rem;line-height:1.1;font-weight:800;letter-spacing:.2px}
+    .subtitle{color:var(--muted);font-weight:500;max-width:700px}
+    .contact{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;color:var(--muted)}
+    .chip{display:inline-flex;align-items:center;gap:8px;background:var(--chip);border-radius:999px;padding:6px 12px;font-size:.95rem;color:#1e3a8a}
+    .chip svg{width:16px;height:16px}
+    hr{border:0;border-top:1px solid var(--rule);margin:18px 0}
+    section{margin:20px 0 8px}
+    h2{font-size:1.05rem;letter-spacing:.12em;text-transform:uppercase;color:#1e293b;margin:0 0 8px}
+    .item{display:grid;grid-template-columns:1fr auto;gap:4px 16px;padding:12px 0}
+    .role{font-weight:700}
+    .org{color:var(--muted)}
+    .meta{color:var(--muted);white-space:nowrap}
+    ul{margin:8px 0 0 18px}
+    li{margin:6px 0}
+    .cols{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+    .list-inline{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 0;padding:0;list-style:none}
+    .list-inline li{background:#f1f5f9;border:1px solid #e2e8f0;border-radius:8px;padding:6px 10px}
+    @media print{
+      .container{margin:0;padding:0}
+      a{text-decoration:none;color:inherit}
+      .chip,.list-inline li{background:#f6f6f6}
+    }
+    @media (max-width:720px){
+      .cols{grid-template-columns:1fr}
+      .meta{justify-self:start}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="headshot.jpg" alt="Bader Ben Naji" />
+      <div class="name">Bader M B A Ben Naji</div>
+      <div class="subtitle">MS in Management Information Systems (MSMIS) Candidate — University of Arizona</div>
+      <div class="contact">
+        <span class="chip" title="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8h18a2 2 0 002-2V8a2 2 0 00-2-2H3a2 2 0 00-2 2v6a2 2 0 002 2z"/></svg>
+          <a href="mailto:badermbennaji@gmail.com">badermbennaji@gmail.com</a>
+        </span>
+        <span class="chip" title="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V24h-4V8.5zM8.5 8.5h3.8v2.1h.1c.5-1 1.8-2.1 3.7-2.1 4 0 4.7 2.6 4.7 6V24h-4v-5.5c0-1.3 0-3-1.9-3s-2.2 1.5-2.2 2.9V24h-4V8.5z"/></svg>
+          <a href="https://linkedin.com/in/baderbennaji">linkedin.com/in/baderbennaji</a>
+        </span>
+        <span class="chip" title="Website">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M12 3a9 9 0 100 18 9 9 0 000-18z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M3 12h18M12 3c2.5 2.5 2.5 15.5 0 18M12 3c-2.5 2.5-2.5 15.5 0 18"/></svg>
+          <a href="https://baderbennaji.com">baderbennaji.com</a>
+        </span>
+      </div>
+    </header>
+
+    <section aria-labelledby="summary">
+      <h2 id="summary">Summary</h2>
+      <hr />
+      <p>
+        Master of Science in Management Information Systems (MSMIS) student at the University of Arizona.
+        Part of the founding team of a startup during COVID at age 17, contributing to website development,
+        operations, and market research. Served as a preceptor for MGMT 310A, mentoring 44 students across 8
+        teams and providing feedback on project milestones and presentations. Skilled in SQL, Python, AWS,
+        Wireshark, Excel, and Tableau.
+      </p>
+    </section>
+
+    <section aria-labelledby="experience">
+      <h2 id="experience">Professional &amp; Leadership Experience</h2>
+      <hr />
+      <div class="item">
+        <div>
+          <div class="role">Preceptor</div>
+          <div class="org">Organizational Behavior and Management (MGMT 310A) — Tucson, Arizona</div>
+          <ul>
+            <li>Mentored 44 students across 8 teams through weekly check-ins and office hours to ensure successful project delivery.</li>
+            <li>Guided team leaders through project milestones, providing feedback on project plans, presentations, and final reports.</li>
+            <li>Collaborated with professor bi-weekly to discuss team progress, mentorship strategies, and effective feedback.</li>
+          </ul>
+        </div>
+        <div class="meta">Aug 2024 – Dec 2024</div>
+      </div>
+
+      <div class="item">
+        <div>
+          <div class="role">Relationship Officer</div>
+          <div class="org">Lambat — Kuwait City</div>
+          <ul>
+            <li>Supported website development through developer interviews and strategic input on design and usability.</li>
+            <li>Built and maintained new client relationships to support business growth.</li>
+            <li>Conducted a market research survey that improved the efficiency of the decision-making process during the startup.</li>
+            <li>Consulted with clients to improve the efficiency and effectiveness of business operations.</li>
+          </ul>
+        </div>
+        <div class="meta">Jun 2020 – Jan 2021</div>
+      </div>
+    </section>
+
+    <section aria-labelledby="education">
+      <h2 id="education">Education</h2>
+      <hr />
+      <div class="item">
+        <div>
+          <div class="role">Master of Science in Management Information Systems</div>
+          <div class="org">University of Arizona, Eller College of Management — Tucson, Arizona</div>
+        </div>
+        <div class="meta">Expected Dec 2026</div>
+      </div>
+
+      <div class="item">
+        <div>
+          <div class="role">Bachelor of Science in Business Administration — Management Information Systems (GPA: 3.82)</div>
+          <div class="org">University of Arizona, Eller College of Management — Tucson, Arizona</div>
+          <ul>
+            <li>Honors &amp; Achievements: Dean's List Honors (2022–2024), Academic Year Distinction (2022–2024), 1st Place Winner, ENTR 485 McGuire Short Film Festival (Spring 2024).</li>
+          </ul>
+        </div>
+        <div class="meta">Jan 2021 – Dec 2024</div>
+      </div>
+    </section>
+
+    <div class="cols">
+      <section aria-labelledby="skills">
+        <h2 id="skills">Skills</h2>
+        <hr />
+        <ul class="list-inline" aria-label="Skills">
+          <li>Microsoft Excel</li>
+          <li>SQL</li>
+          <li>Python</li>
+          <li>AWS</li>
+          <li>Wireshark</li>
+          <li>Tableau</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="languages">
+        <h2 id="languages">Languages</h2>
+        <hr />
+        <p>Native Arabic speaker</p>
+      </section>
+    </div>
+
+    <div class="cols">
+      <section aria-labelledby="activities">
+        <h2 id="activities">Activities</h2>
+        <hr />
+        <ul>
+          <li>Member, National Society of Leadership and Success</li>
+          <li>Member, Management Information Systems Association</li>
+          <li>ECON 200 note taker, Disability Resource Center (Spring 2022)</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="interests">
+        <h2 id="interests">Interests</h2>
+        <hr />
+        <ul>
+          <li>Kyokushin Karate (since age 8)</li>
+          <li>Playing the Oud (self-taught, 6 years)</li>
+          <li>Cooking</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
